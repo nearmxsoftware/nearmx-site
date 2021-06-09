@@ -1,4 +1,41 @@
 <?php
+
+$secret = "6LclOkIaAAAAAO8zb4EvetMtWy6jEDVn7aQ1EJjK";
+
+if (isset($_POST['g-recaptcha-response'])) {
+$captcha = $_POST['g-recaptcha-response']; 
+$url = 'https://www.google.com/recaptcha/api/siteverify';
+$data = array(
+'secret' => $secret,
+'response' => $captcha,
+'remoteip' => $_SERVER['REMOTE_ADDR']
+);
+
+$curlConfig = array(
+CURLOPT_URL => $url,
+CURLOPT_POST => true,
+CURLOPT_RETURNTRANSFER => true,
+CURLOPT_POSTFIELDS => $data
+);
+
+$ch = curl_init();
+curl_setopt_array($ch, $curlConfig);
+$response = curl_exec($ch);
+curl_close($ch);
+}
+
+$jsonResponse = json_decode($response);
+
+if ($jsonResponse->success === true) {
+
+// Si el código es correcto, seguimos procesando el formulario como siempre 
+
+} else { 
+
+// Si el código no es válido, lanzamos mensaje de error al usuario 
+
+}
+
 // My modifications to mailer script from: <-- WHO'S ME?!?
 // http://blog.teamtreehouse.com/create-ajax-contact-form
 // Added input sanitizing to prevent injection
@@ -127,3 +164,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     http_response_code(403);
     echo "Oops! A 403 error occurred, try again.";
 }
+
+
+
+
+
+
+?>

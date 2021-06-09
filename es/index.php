@@ -2,11 +2,11 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="csrf-token" content="7kxHV9UR5pAzDa7Lr0wXy7FVACgfqhhJat4guzhT">
-    <meta name="description" content="NEARMX empresa desarrolladora de app y aplicaciones web. Somos desarrolladores especializados en diseño y programación web, esto nos permite generar proyectos rápidos a precios accesibles.">
-    <title>NEARMX - Desarrollo de aplicaciones web y Apps en Chihuahua</title>
+    <meta name="description" content="NEARMX empresa desarrolladora de software y aplicaciones web. Somos desarrolladores especializados en diseño y programación web, esto nos permite generar proyectos rápidos a precios accesibles.">
+    <title>NEARMX - Desarrollo de Software y aplicaciones web en Chihuahua</title>
     <link rel="icon" href="img/icon.ico">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
           integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
@@ -22,11 +22,15 @@
       gtag('config', 'UA-126268792-1');
     </script>
 
+    <script src="https://www.google.com/recaptcha/api.js?hl=es" async defer></script>
+
+
 </head>
 <body data-spy="scroll" data-target="#navbar">
+    <?php require_once "includes/recaptchalib.php";?>
 <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top smooth-transition-300" id="navbar">
     <div class="container">
-        <a class="navbar-brand" href="#banner"><img src="img/logo.png" alt="NearMX"></a>
+        <a class="navbar-brand" href="#banner"><img src="img/logo-nearmx.png" alt="Logo Nearmx"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -51,8 +55,8 @@
         <div class="container vertical-align">
             <div class="row">
                 <div class="col-md-6">
-                        <h1>Desarrollamos aplicaciones web </h1>
-                        <h2>Te ayudamos a diseñar y desarrollar tu idea de manera increible.</h2>
+                        <h1>Nearmx: Somos una empresa de desarrollo de software y aplicaciones web </h1>
+                        <h3>Te ayudamos a diseñar y desarrollar tu idea de manera increible.</h3>
                         <a href="#contact" rel="nofollow" class="btn btn-blue">Contactanos</a>
                 </div>
                 <div class="col-md-6 text-center">
@@ -63,11 +67,10 @@
     </div>
     <section id="about">
         <div class="container text-center">
-            <h1 class="heading">
-                <span class="text-light-gray">Acerca de nosotros</span>
-                <span class="clearfix"></span>
-               NEARMX
-            </h1>
+            <span class="text-light-gray">Acerca de nosotros</span>
+            <h2 class="heading">
+                <span class="clearfix"></span> NEARMX
+            </h2>
             <p>
                 Somos un equipo con cede en Chihuahua, nos especializamos en el desarrollo de aplicaciones web para tu empresa o idea de negocio, es de suma importancia que tus clientes y personal puedan acceder desde cualquier teléfono móvil o computadora de escritorio con solo tener acceso a internet.</p>
 
@@ -91,12 +94,10 @@
         
     </section>
     <section id="services">
+        
         <div class="container">
-            <h1 class="heading text-center">
-                <span class="text-light-gray">Desarrollo a la medida</span>
-                <span class="clearfix"></span>
-                 Servicios
-            </h1>
+            <div class="text-center"><span class="text-light-gray">Desarrollo a la medida</span></div>
+            <h2 class="heading text-center"> <span class="clearfix"></span> Servicios </h2>
             <div class="row">
                 <div class="col-md-4">
                     <div class="row">
@@ -114,7 +115,7 @@
                 <div class="col-md-4">
                     <div class="row">
                         <div class="col-md-2">
-                            <img src="img/services/2.png" class="img-fluid" alt="Experiencia ">
+                            <img src="img/services/2.png" class="img-fluid" alt="Experiencia en software">
                         </div>
                         <div class="col-md-10">
                             <h5>Experiencia de usuario</h5>
@@ -140,7 +141,7 @@
                 <div class="col-md-4">
                     <div class="row">
                         <div class="col-md-2">
-                            <img src="img/services/5.png" class="img-fluid" alt="Aplicación resposivo">
+                            <img src="img/services/5.png" class="img-fluid" alt="Aplicación para celulares">
                         </div>
                         <div class="col-md-10">
                             <h5>Diseño responsibo</h5>
@@ -183,11 +184,8 @@
     </section>
     <section id="portfolio">
         <div class="container">
-            <h1 class="heading text-center">
-                <span class="text-light-gray">This is our work</span>
-                <span class="clearfix"></span>
-                Portafolio
-            </h1>
+            <div class="text-center"><span class="text-light-gray">This is our work</span></div>
+            <h2 class="heading text-center"> <span class="clearfix"></span> Portafolio </h2>
             <div class="row">
                 <div class="col-12">
                     <div class="row">
@@ -213,20 +211,30 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <img src="img/portfolio/3.png" class="img-fluid"  alt="TEP Transportes especializados de personal">
+                        </div>
+                        <div class="col-md-4">
+                            <h2>TEP - APP WEB</h2>
+                            <p>Diseño y desarrollo especializado para el transporte de personal a maquiladoras, control de viajes, estauts de los viajes, aguilización de reportes para cobranza, conductores con acceso para es el estatus de cada personal... para más información visita:</p>
+                            <a href="http://app.tepcuu.com" target="_blank" class="btn btn-blue">www.tepcuu.com</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="team">
-        <div class="container text-center">
-            <h1 class="heading">
-                <span class="clearfix"></span>
-                Our Team
-            </h1>
+        <div class="container text-center text-center">
+            <span class="text-light-gray">Especialistas en desarrollo de web app</span>
+            <h2 class="heading"><span class="clearfix"></span> Equipo </h2>
             <div class="row">
                 <div class="col-12 col-md-3 mx-auto">
                     <div class="img-container">
-                        <img src="img/team/1.jpg" class="img-fluid rounded-circle" alt="Manager">
+                        <img src="img/team/1.jpg" class="img-fluid rounded-circle" alt="Jon Palma - Desarrollador web - NearMX">
 
                     </div>
                     <h5>UI & UX Experience</h5>
@@ -235,7 +243,7 @@
                 </div>
                 <div class="col-12 col-md-3 mx-auto">
                     <div class="img-container">
-                        <img src="img/team/3.jpg" class="img-fluid rounded-circle" alt="Manager">
+                        <img src="img/team/3.jpg" class="img-fluid rounded-circle" alt="Angel Lujan - Desarrollador web - NearMX">
                     </div>
                     <h5>Developer / Front & Back End </h5>
                     <h2>Ángel Lujan</h2>
@@ -246,46 +254,39 @@
     </section>
     <section id="contact">
         <div class="container">
-            <h1 class="heading text-center">
-                <span class="text-light-gray">Dejanos tu mensaje</span>
-                <span class="clearfix"></span>
-                Contacto
-            </h1>
+            <div class="text-center"><span class="text-light-gray">Dejanos tu mensaje</span></div>
+            <h2 class="heading text-center"> <span class="clearfix"></span> Contacto </h2>
             <div class="relative-container">
-               
-                    <div class="contact-form">
-                    <form method="POST" action="mailer.php" accept-charset="UTF-8"><input
-                                name="_token" type="hidden" value="7kxHV9UR5pAzDa7Lr0wXy7FVACgfqhhJat4guzhT">
-                                 <div class="row">
-                        <div class="col-md-6">
-                            <label for="name">Nombre</label>
-                            <input required="required" placeholder="Nombre" name="name" type="text" id="name">
-                        </div>
-                        <div class="col-md-6">
-                            <label for="phone">Teléfono</label>
-                            <input required="required" placeholder="6141002000" name="phone" type="tel"
-                                   id="phone">
-                        </div>
-                        <div class="col-md-6">
-                            <label for="email">Correo electrónico</label>
-                            <input required="required" placeholder="example@mail.com" name="email" type="email"
-                                   id="email">
-                        </div>
-                        <div class="col-md-6">
-                            <label for="city">Ciudad</label>
-                            <input required="required" placeholder="Chihuahua" name="city" type="city"
-                                   id="city">
-                        </div>
-                        <div class="col-md-12">
-                            <label for="message">Mensaje</label>
-                            <textarea required="required" placeholder="Dejanos tus comentarios" rows="3" name="message" cols="50"
-                                      id="message"></textarea>
-                        </div>
-                        <div class="text-right">
-                            <input class="btn btn-blue" type="submit" value="Send">
+                <div class="contact-form">
+                    <form method="POST" action="mailer.php" accept-charset="UTF-8">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="name">Nombre</label>
+                                <input required="required" placeholder="Nombre" name="name" type="text" id="name">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="phone">Teléfono</label>
+                                <input required="required" placeholder="6141002000" name="phone" type="tel" id="phone">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email">Correo electrónico</label>
+                                <input required="required" placeholder="example@mail.com" name="email" type="email" id="email">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="city">Ciudad</label>
+                                <input required="required" placeholder="Ciudad" name="city" type="text" id="city">
+                            </div>
+                            <div class="col-md-12">
+                                <label for="message">Mensaje</label>
+                                <textarea required="required" placeholder="Dejanos tus comentarios" rows="3" name="message" cols="50" id="message"></textarea>
+                            </div>
+                            <!-- <div class="col-md-12">
+                                <div class="g-recaptcha" data-sitekey="6LclOkIaAAAAAO8zb4EvetMtWy6jEDVn7aQ1EJjK">
+                            </div>
+                        -->
+                            <input type="submit" class="btn btn-blue">
                         </div>
                     </form>
-                </div>
                 </div>
             </div>
         </div>
@@ -297,13 +298,10 @@
             <div class="row align-items-center text-white">
                 <div class="col-md-5">
                     <p class="mx-auto">
-                        Parque de Innovación y Transferencia de Tecnología. <br>
-                        Heroico Colegio Militar #4700.
-                        <span class="clearfix"></span>
-                        Chihuahua, Mexico.
-                    </p>
-                    <p class="mx-auto">
-                        Tel. (614) 153 5440
+                        Teléfono de contacto <br>
+                        Jonathan Palma <br>
+                        (614) 153 5440 <br>
+                        Chihuahua, México
                     </p>
                 </div>
                 <div class="col-md-4">
@@ -316,9 +314,11 @@
         <span>All rights reserved 2018 - <?php echo date('Y');?></span>
     </div>
 </footer>
-<script type="text/javascript" src="js/app.js"></script>
-<script type="text/javascript" src="js/index.js"></script>
+
+<script src="js/app.js"></script>
+<script src="js/index.js"></script>
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
 <script>
     $.ajaxSetup({
         headers: {
@@ -326,5 +326,8 @@
         }
     });
 </script>
+
+
+
 </body>
 </html>
