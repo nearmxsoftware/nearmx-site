@@ -1,0 +1,62 @@
+/** 
+Autor 		Jon Palma 
+Empresa		www.palmadesigners.com 
+Fecha		01-06-2012
+Version		1.0 
+**/
+@import url('reset.css');
+body{ background:#000; color:#fff; font-family: 'PT Sans Narrow', Arial, sans-serif; font-size:12px; }
+a { color:#000; text-decoration:none; }
+.clr 		{ clear:both; }
+.contenedor 	{ width:100%; position:relative; z-index:100; margin:40px auto; }
+.content 	{ width:1000px; margin:0 auto; }
+.content	{ width:100%; position:relative; }
+.hsd-container 	{ position:relative; margin:40px auto 0 auto; }
+.hsd-contenedor  	{ width:100%; height:100%; position:relative; overflow:hidden; background:#000; }
+.hsd-slice 		{ cursor:pointer; position:absolute; width:100%; left:0px; overflow:hidden; }
+.hsd-slice-0{ background:#000 url(../imagenes/0.jpg) no-repeat center center; }
+.hsd-slice-1{ background:#000 url(../imagenes/1.jpg) no-repeat center center; }
+.hsd-slice-2{ background:#000 url(../imagenes/2.jpg) no-repeat center center; }
+.hsd-slice-3{ background:#000 url(../imagenes/3.jpg) no-repeat center center; }
+.hsd-slice-4{ background:#000 url(../imagenes/4.jpg) no-repeat center center; }
+.hsd-slice-5{ background:#000 url(../imagenes/5.jpg) no-repeat center center; }
+.hsd-slice-6{ background:#000 url(../imagenes/6.jpg) no-repeat center center; }
+.hsd-slice-7{ background:#000 url(../imagenes/7.jpg) no-repeat center center; }
+.hsd-slice-8{ background:#000 url(../imagenes/8.jpg) no-repeat center center; }
+.hsd-musica 		{  width:200px; margin-top:300px; font-family: 'Open Sans Condensed', sans-serif; text-transform:uppercase; color:#fff; text-shadow: 0px 0px 1px white;}
+.hsd-contenido 	{ display:none; margin-left:25px; }
+.hsd-slice p 	{ font-size: 22px; font-style: italic; font-family:Georgia, serif; }
+
+.hsd-nav span 	{ width:40px; height:25px; background:transparent url(../imagenes/prev.png) no-repeat center center; position:absolute; top:-35px; left:50%; margin-left:-20px; text-indent:-9000px; opacity:0.7; cursor:pointer; display:none; z-index:100; }
+.hsd-nav span.hsd-nav-siguiente 	{ background-image:url(../imagenes/next.png); top:auto; bottom:-35px; }
+.hsd-nav span:hover 			{ opacity:1.0; }
+
+
+/** Chingoooooon **/
+.csswinner{
+position:absolute;
+top:50px;
+right:0px;
+z-index:999;
+}
+.csswinner a{
+width:81px;
+height:59px;
+text-indent:-9000px;
+display:block;
+background:url(../imagenes/nominee-black-right.png) no-repeat;
+}
+
+.awwwards{
+position:absolute;
+top:120px;
+right:0px;
+z-index:999;
+}
+.awwwards a{
+width:81px;
+height:105px;
+text-indent:-9000px;
+display:block;
+background:url(../imagenes/awwwards.png) no-repeat;
+}
