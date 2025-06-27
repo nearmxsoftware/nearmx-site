@@ -9,7 +9,7 @@
     <link rel="icon" href="img/icon.ico">
 
     <meta name="description" content="Diseño de Páginas Web en Chihuahua, diseñamos tu sitio web a la medida de tus necesidades.">
-    <meta name="author" content="Jonhatan Palma">
+    <meta name="author" content="Jon Palma | Nearmx">
    
 
     <meta property="og:title" content="Diseño de páginas web y desarrollo de Software">
@@ -17,7 +17,7 @@
     <meta property="og:url" content="https://nearmx.com">
     <meta property="og:description" content="Diseño de Páginas Web y Software en Chihuahua. Cada proyecto lo adecuamos a la necesidad para aumento de prospectos y clientes. Nos especializamos en páginas web y desarrollo de Software a la medida. ">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://nearmx.com/img/portfolio/pagina-web-mvpstore.jpg">
+    <meta property="og:image" content="https://nearmx.com/img/portfolio/pagina-web-prime-beef.jpg">
 
     
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
@@ -321,7 +321,7 @@
                                 <li>Sección de descuentos</li>
                                 <li>Enviós para toda la republica mexicana</li>
                             </ul>
-                            <a href="hhttps://molscrubs.com.mx/" target="_blank" class="btn btn-blue">www.molscrubs.com.mx</a>
+                            <a href="https://molscrubs.com.mx/" target="_blank" class="btn btn-blue">www.molscrubs.com.mx</a>
                         </div>
                         <div class="col-md-8" data-aos="fade-right" data-aos-duration="1000">
                             <img src="img/portfolio/pagina-web-mol-scrubs.jpg" class="img-fluid"  alt="Venta de ropa médica">
